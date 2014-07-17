@@ -1,0 +1,30 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: libdvbpsi-0.2.0.zip
+       Short Description: libdvbpsi v0.2.0
+        Long Description: libdvbpsi v0.2.0
+The libdvbpsi is part of the VideoLAN project, a full MPEG2
+client/server solution. The libdvbpsi can also be used with extra
+programs that need DVB and PSI decoders and generators.
+
+      Proposed directory
+           for placement: /pub/os2/dev/mm
+
+               Your name: KO Myung-Hun
+           Email address: komh@chollian.net
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: (none) 
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version: 
+ Additional requirements: kLIBC v0.6.3
+
+                Replaces: (none)
+
+
+

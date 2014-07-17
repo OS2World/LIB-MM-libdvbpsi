@@ -1,0 +1,25 @@
+diff -uNr  configure.ac.org configure.ac
+--- configure.ac.org	2011-04-04 23:34:06.000000000 +0900
++++ configure.ac	2011-05-14 16:12:24.000000000 +0900
+@@ -24,6 +24,9 @@
+   xdarwin*)
+     CFLAGS="${CFLAGS} -no-cpp-precomp"
+     ;;
++  xos2*)
++    LDFLAGS="${LDFLAGS} -no-undefined"
++    ;;
+ esac
+ 
+ dnl --enable-debug
+diff -uNr  examples/connect.c.org examples/connect.c
+--- examples/connect.c.org	2011-02-08 00:58:14.000000000 +0900
++++ examples/connect.c	2011-05-14 16:12:24.000000000 +0900
+@@ -38,7 +38,7 @@
+ #   include <netinet/if_ether.h>
+ #endif
+ #include <netdb.h>
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__OS2__)
+ #    include <netinet/ip.h>
+ #endif
+ #include <netinet/udp.h>
